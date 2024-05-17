@@ -109,4 +109,30 @@ a {
   font-family: " burtos";
   src: url("../public/Burtons.otf");
 }
+.sliderContainer {
+  overflow: hidden;
+  width: 86vw; /* Adjusted width */
+  height: 110px; /* Adjusted height */
+  margin: auto; /* Center the slider */
+}
+
+.logoSlider > img {
+  width: 140px; /* Adjusted image width */
+  height: 85px; /* Adjusted image height */
+}
+
+.logoSlider {
+  display: flex;
+  animation: slideshow 10s infinite linear; /* Adjusted animation speed */
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0); /* Start from initial position */
+  }
+  100% {
+    transform: translateX(calc(-120px * 10)); /* Move the width of all slides */
+  }
+}
+
 
